@@ -1,7 +1,0 @@
-class g_product_sub_category(models.Model):
-	is_active = models.BooleanField(blank=False) // 	
-	create_update_at = models.CharField(blank=False) // 	
-	fk_product_id = models.ForeignKey(max_length=500,blank=False,on_delete=models.CASCADE) // Not Complete	
-	product_sub_category = models.CharField(blank=False) // 	
-	desc = models.CharField(blank=False) // 	
-	isactive = models.BooleanField(blank=False) // 	

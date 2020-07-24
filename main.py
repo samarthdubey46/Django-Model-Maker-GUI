@@ -1,7 +1,6 @@
 import tkinter
 root = tkinter.Tk()
 
-
 def command(row1):
     s = list1[row1]["blank"]
     list1[row1]["blank"] = True if s is False else False
@@ -9,31 +8,37 @@ def command(row1):
 
 list1 = [
     {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
-    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":''},
+    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
     {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
-    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":''},
+    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
     {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
-    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":''},
+    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
     {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
-    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":''},
+    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
     {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
-    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":''},
+    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
     {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
-    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":''},
+    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
     {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
-    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":''},
+    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
     {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
-    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":''},
+    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
     {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
-    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":''},
+    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
     {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
-    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":''},
+    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
     {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
-    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":''},
+    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
     {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
-    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":''},
+    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
     {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
-    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":''},
+    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
+    {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
+    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
+    {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
+    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
+    
+    
     
 
 ]
@@ -49,6 +54,7 @@ l9 = tkinter.Label(root, text="").grid(row=0, column=0, pady=2)
 
 for i in list1:
     i['id'] = tkinter.Entry(root, textvariable=i["name"])
+    i['Foriegnobj'] = tkinter.Entry(root, textvariable=i["ForiegnStr"])
     i['commentType'] = tkinter.Entry(root, textvariable=i["comment"])
     i["blank"].set(0)
     i['typo'] = tkinter.OptionMenu(root, i["fieldname"], options, "BooleanField", "IntegerField", "DateTimeField", "EmailField", "ImageField",
@@ -62,11 +68,14 @@ for i in list1:
     l3 = tkinter.Label(root, text="Black").grid(
         row=row, column=4, pady=2, padx=5)
     l4 = tkinter.Label(root, text="Comment").grid(
+        row=row, column=8, pady=2, padx=5)
+    l4 = tkinter.Label(root, text="ForiegnObject").grid(
         row=row, column=6, pady=2, padx=5)
     i['id'].grid(row=row, column=1, pady=4, padx=5)
     i['typo'].grid(row=row, column=3, pady=4, padx=5)
     i['blankname'].grid(row=row, column=5, padx=5)
-    i['commentType'].grid(row=row, column=7, padx=5)
+    i['commentType'].grid(row=row, column=9, padx=5)
+    i['Foriegnobj'].grid(row=row,column=7,padx=5)
     if(row > 1):
         i["fieldname"].set("CharField")
     row += 1
@@ -78,7 +87,7 @@ classs.place(x=300, y=5)
 def onpress():
     with open("name.py", 'a') as obj:
         obj.write("from django.db import models")
-        obj.write()
+        obj.write('\n')
         obj.write("class {0}(models.Model):".format(class_n.get()))
         obj.write('\n')
 
@@ -88,6 +97,7 @@ def onpress():
         i["main_name"] = i["name"].get()
         i["typo"] = i["fieldname"].get()
         i["ca"] = i["comment"].get()
+        ft = i["ForiegnStr"].get()
         name = i["main_name"]
         typeo = i["typo"]
         if (typeo == "CharField"):
@@ -96,9 +106,9 @@ def onpress():
                 i["ca"]
                 )
         if (typeo == "ForeignKey" or typeo == "OneToOneField" or typeo == "ManyToManyField"):
-            s = "{0} = models.{1}(max_length=500,blank={2},on_delete=models.CASCADE) // {3}".format(
+            s = "{0} = models.{1}({4},blank={2},on_delete=models.CASCADE) // {3}".format(
                 name, typeo, "True" if str(i["blank"].get()) == "1" else "False",
-                i["ca"])
+                i["ca"],ft)
         elif(typeo == "UUIDField"):
             s = "{0} = models.{1}(max_length=500,blank={2},primary_key = True,default = uuid.uuid4,editable = False) // {3}".format(
                 name, typeo, "True" if str(i["blank"].get()) == "1" else "False",
