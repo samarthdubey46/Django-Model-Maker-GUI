@@ -21,44 +21,32 @@ list1 = [
     ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
     {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
     ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
-    {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
+        {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
     ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
-    {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
+            {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
     ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
-    {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
+                {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
     ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
-    {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
+                    {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
     ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
-    {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
+                        {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
     ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
-    {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
-    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
-    {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
-    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
-    {"id": '', "name": tkinter.StringVar(root), "typo": '', "main_name": 'is_active', "blank": tkinter.IntVar(
-    ), "blankname": '', "typename": '', "fieldname": tkinter.StringVar(root), "comment": tkinter.StringVar(root), 'commentType': '',"ca":'',"ForiegnStr":tkinter.StringVar(root),"Foriegnobj":''},
-    
-    
-    
 
 ]
-list1[0]["name"].set("is_active")
-list1[1]["name"].set("create_update_at")
-list1[0]["fieldname"].set("BooleanField")
-list1[1]["fieldname"].set("DateTimeField")
+
 row = 1
 options = ("CharField")
 class_n = tkinter.StringVar()
 l9 = tkinter.Label(root, text="").grid(row=0, column=0, pady=2)
 # l12 = tkinter.Label(root,text = "").grid(row=1,column=0,pady = 2)
-
+class_n.set("name")
 for i in list1:
     i['id'] = tkinter.Entry(root, textvariable=i["name"])
     i['Foriegnobj'] = tkinter.Entry(root, textvariable=i["ForiegnStr"])
     i['commentType'] = tkinter.Entry(root, textvariable=i["comment"])
     i["blank"].set(0)
     i['typo'] = tkinter.OptionMenu(root, i["fieldname"], options, "BooleanField", "IntegerField", "DateTimeField", "EmailField", "ImageField",
-                                   "UUIDField", "URLField", "DecimalField", "OneToOneField", "ForeignKey", "ManyToManyField")
+                                   "UUIDField", "URLField", "DecimalField","ForeignKey")
     i['blankname'] = tkinter.Checkbutton(
         root, variable=i["blank"], onvalue=1, offvalue=0)
     l1 = tkinter.Label(root, text="Name").grid(
@@ -76,55 +64,65 @@ for i in list1:
     i['blankname'].grid(row=row, column=5, padx=5)
     i['commentType'].grid(row=row, column=9, padx=5)
     i['Foriegnobj'].grid(row=row,column=7,padx=5)
-    if(row > 1):
+    if(row > 2):
         i["fieldname"].set("CharField")
     row += 1
 classs = tkinter.Entry(root, textvariable=class_n)
 label = tkinter.Label(root, text="Class").place(x=250, y=5)
 classs.place(x=300, y=5)
 
+list1[0]["name"].set("is_active")
+list1[1]["name"].set("create_update_at")
+list1[0]["fieldname"].set("BooleanField")
+list1[1]["fieldname"].set("DateTimeField")
 
 def onpress():
-    with open("name.py", 'a') as obj:
+    with open(str(class_n.get()) + '.py' if class_n.get() is not None else "name.py", 'a') as obj:
         obj.write("from django.db import models")
         obj.write('\n')
         obj.write("class {0}(models.Model):".format(class_n.get()))
         obj.write('\n')
 
     for i in list1:
-        if i["blank"] is not None:
-            i["blank"] = i["blank"]
-        i["main_name"] = i["name"].get()
-        i["typo"] = i["fieldname"].get()
-        i["ca"] = i["comment"].get()
-        ft = i["ForiegnStr"].get()
-        name = i["main_name"]
-        typeo = i["typo"]
-        if (typeo == "CharField"):
-            s = "{0} = models.{1}(max_length=500,blank={2}) // {3}".format(
-                name, typeo, "True" if str(i["blank"].get()) == "1" else "False",
-                i["ca"]
-                )
-        if (typeo == "ForeignKey" or typeo == "OneToOneField" or typeo == "ManyToManyField"):
-            s = "{0} = models.{1}({4},blank={2},on_delete=models.CASCADE) // {3}".format(
-                name, typeo, "True" if str(i["blank"].get()) == "1" else "False",
-                i["ca"],ft)
-        elif(typeo == "UUIDField"):
-            s = "{0} = models.{1}(max_length=500,blank={2},primary_key = True,default = uuid.uuid4,editable = False) // {3}".format(
-                name, typeo, "True" if str(i["blank"].get()) == "1" else "False",
-                i["ca"])
-        else:
-            s = "{0} = models.{1}(blank={2}) // {3}".format(
-                name, typeo, "True" if str(i["blank"].get()) == "1" else "False",
-                i["ca"])
+        name = i.get("name").get()
+        types = i.get("fieldname").get()
+        comment = i.get("comment").get()
+        foriegn_key = i.get("ForiegnStr").get()
+        blank = "True" if i.get("blank").get() == 1 else "False"
 
-        if(i["main_name"] != "" and i["typo"] != ""):
-            with open("name.py", 'a') as obj:
-                obj.write('\t' + s)
-                obj.write('\t' + '\n')
-            print(s)
+        if(types == "CharField" or types == "EmailField" or types == "URLField"):
+            string = f"{name} = models.{str(types)}(max_length=500,blank={blank}) // {comment}"
+            if(name != ""):
+                with open(str(class_n.get()) + '.py' if class_n.get() is not None else "name.py", 'a') as obj:
+                    obj.write('\t' + string)
+                    obj.write('\n')
+        if(types == "ForeignKey"):
+            print(types)
+            string = f"{name} = models.{str(types)}({foriegn_key},on_delete=models.CASCADE) // {comment}"
+            if(name != ""):
+                with open(str(class_n.get()) + '.py' if class_n.get() is not None else "name.py", 'a') as obj:
+                    obj.write('\t' + string)
+                    obj.write('\n')
+        if(types=="BooleanField"):
+            string = f"{name} = models.{str(types)}(default=False,blank={blank}) // {comment}"
+            if(name != ""):
+                with open(str(class_n.get()) + '.py' if class_n.get() is not None else "name.py", 'a') as obj:
+                    obj.write('\t' + string)
+                    obj.write('\n')
+        if(types == "DecimalField"):
+            string = f"{name} = models.{str(types)}(max_digits=500,decimal_places=2,blank={blank}) // {comment}"
+            if(name != ""):
+                with open(str(class_n.get()) + '.py' if class_n.get() is not None else "name.py", 'a') as obj:
+                    obj.write('\t' + string)
+                    obj.write('\n')
 
-        # print(f"{i["name"]} = models.{i["fieldname"]}(max_length=500)")
+        if(types == "IntegerField" or types == "DateTimeField" or types == "ImageField" or types == "UUIDField") :
+            string = f"{name} = models.{str(types)}(blank={blank}) // {comment}"
+            if(name != ""):
+                with open(str(class_n.get()) + '.py' if class_n.get() is not None else "name.py", 'a') as obj:
+                    obj.write('\t' + string)
+                    obj.write('\n')
 
-tkinter.Button(root, text="Sumbit", command=onpress).grid(row=row+1, column=3)
+
+tkinter.Button(root, text="Sumbit", command=onpress).grid(row=row+1, column=5,pady=14)
 root.mainloop()
